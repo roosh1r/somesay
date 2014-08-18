@@ -1,71 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	<title>Some Say</title>
+	<head>
+		<title>Some Say</title>
 
-    <!-- BOOTSTRAP 3.1.1 and FONT-AWESOME -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="all">
-    <link href="fa/css/font-awesome.css" rel="stylesheet" media="all">
-    <link rel="icon" type="image/png" href="img/logo-t-favicon.png">
+		<!-- BOOTSTRAP 3.1.1 and FONT-AWESOME -->
+		<link rel="stylesheet" media="all" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" media="all" href="files/style.css">
+		<link rel="icon" type="image/png" href="img/favicon.png">
 
-    <meta name="description" content="SomeSay Stig facts">
-	<meta name="keywords" content="Stig, Top Gear, Top Gear UK, BBC, Some Say">
-	<meta name="author" content="RD">
+		<meta name="description" content="SomeSay Stig facts">
+		<meta name="keywords" content="Stig, Top Gear, Top Gear UK, BBC, Some Say">
+		<meta name="author" content="RD">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </head>
+	</head>
 
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="bootstrap/js/jquery-1.11.1.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
-	<script src="bootstrap/js/site.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="files/site.js"></script>
 
-  <body>
 
-  <!-- MAIN BODY-->
+	<body>
 
-  <div class="container-fluid" id="somesay"> 
+	<!-- MAIN BODY-->
 
-  	<!-- Stig Helmet -->
-	<div class="row top-buffer">
-		<div class="col-md-4 col-sm-2 hidden-xs"></div>
-		<div class="col-xs-12 col-sm-8 col-md-4">
-			<img class="img-responsive center-block vpsize" src="img/stig-m.png" />
+		<div class="container-fluid page" id="bgcolor">
+			<div id="content"> 
+
+			<!-- Stig Helmet -->
+				<div class="row top-buffer">
+					<div class="col-md-4 col-sm-2 hidden-xs"></div>
+					<div class="col-xs-12 col-sm-8 col-md-4">
+						<img class="img-responsive center-block vpsize" src="img/stig-m.png" />
+					</div>
+					<div class="col-md-4 col-sm-2 hidden-xs"></div>
+				</div>
+
+
+				<!-- Some Say -->
+				<div class="row">
+					<div class="col-md-4 col-sm-2 hidden-xs"></div>
+					<div class="col-xs-12 col-md-4 col-sm-8 text-center" >
+						<h1 class="vpsize">Some Say</h1>
+					</div>
+					<div class="col-md-4 col-sm-2 hidden-xs"></div>
+				</div>
+
+				<!-- Stig Fact -->
+				<div class="row">
+					<div class="col-md-3 col-sm-2 hidden-xs"></div>
+						<div class="col-xs-12 col-md-6 col-sm-8 text-center">
+						<p class="lead vpsize" id="fact"></p>
+					</div>
+					<div class="col-md-3 col-sm-2 hidden-xs"></div>
+				</div>
+
+				<!-- All We know-->
+				<div class="row">
+					<div class="col-md-4 col-sm-2 hidden-xs"></div>
+					<div class="col-xs-12 col-md-4 col-sm-8 text-center">
+						<p class="lead vpsize"><em>All we know is, he's called The Stig</em></p>
+					</div>
+					<div class="col-md-4 col-sm-2 hidden-xs"></div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-2 hidden-xs"></div>
+					<div id="mybutton" class="col-xs-12 col-md-4 col-sm-8 text-center">
+						<button onclick="shuffle();" type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-cog"></span> New Fact
+						</button>
+						<a class="btn btn-default" role="button" href="https://docs.google.com/forms/d/1lFNm9VQ1dP3RpMu7vSY8UgZ6nhnZd6kNnlIhxw9yJ7I/viewform" target="_blank">
+							<span class="glyphicon glyphicon-plus"></span> Add Fact
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-2 hidden-xs"></div>
+				</div>
+
+			</div>
 		</div>
-		<div class="col-md-4 col-sm-2 hidden-xs"></div>
-	</div>
 
-
-	<!-- Some Say -->
-	<div class="row">
-		<div class="col-md-4 col-sm-2 hidden-xs"></div>
-		<div class="col-xs-12 col-md-4 col-sm-8 text-center" >
-			<h1 class="vpsize">Some Say</h1>
-		</div>
-		<div class="col-md-4 col-sm-2 hidden-xs"></div>
-	</div>
-
-	<!-- Stig Fact -->
-	<div class="row">
-		<div class="col-md-3 col-sm-2 hidden-xs"></div>
-		<div class="col-xs-12 col-md-6 col-sm-8 text-center">
-			<p class="lead vpsize">That he once lost a canoe on a beach in the north east, and that he once did some time in a prison in Canterbury because his teddy is called "The baby Jesus".</p>
-		</div>
-		<div class="col-md-3 col-sm-2 hidden-xs"></div>
-	</div>
-
-	<!-- All We know-->
-	<div class="row bottom-buffer">
-		<div class="col-md-4 col-sm-2 hidden-xs"></div>
-		<div class="col-xs-12 col-md-4 col-sm-8 text-center">
-			<p class="lead vpsize"><em>All we know is, he's called The Stig</em></p>
-		</div>
-		<div class="col-md-4 col-sm-2 hidden-xs"></div>
-	</div>
-
-
-  </div>
-
-  </body>
+	</body>
 </html>
