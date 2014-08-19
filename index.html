@@ -5,8 +5,8 @@
 
 		<!-- BOOTSTRAP 3.1.1 and FONT-AWESOME -->
 		<link rel="stylesheet" media="all" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" media="all" href="files/style.css">
 		<link rel="icon" type="image/png" href="img/favicon.png">
+		<link rel="stylesheet" media="all" href="files/style.css">
 
 		<meta name="description" content="SomeSay Stig facts">
 		<meta name="keywords" content="Stig, Top Gear, Top Gear UK, BBC, Some Say">
@@ -29,10 +29,10 @@
 			<div id="content"> 
 
 			<!-- Stig Helmet -->
-				<div class="row top-buffer">
+				<div id="helmet" class="row top-buffer">
 					<div class="col-md-4 col-sm-2 hidden-xs"></div>
 					<div class="col-xs-12 col-sm-8 col-md-4">
-						<img class="img-responsive center-block vpsize" src="img/stig-m.png" />
+						<img id="stigimg" class="img-responsive center-block vpsize" src="img/stig-m.png" />
 					</div>
 					<div class="col-md-4 col-sm-2 hidden-xs"></div>
 				</div>
@@ -40,17 +40,17 @@
 
 				<!-- Some Say -->
 				<div class="row">
-					<div class="col-md-4 col-sm-2 hidden-xs"></div>
-					<div class="col-xs-12 col-md-4 col-sm-8 text-center" >
+					<div class="col-md-3 col-sm-2 hidden-xs"></div>
+					<div id="somesay" class="col-xs-12 col-md-6 col-sm-8 text-center" >
 						<h1 class="vpsize">Some Say</h1>
 					</div>
-					<div class="col-md-4 col-sm-2 hidden-xs"></div>
+					<div class="col-md-3 col-sm-2 hidden-xs"></div>
 				</div>
 
 				<!-- Stig Fact -->
 				<div class="row">
 					<div class="col-md-3 col-sm-2 hidden-xs"></div>
-						<div class="col-xs-12 col-md-6 col-sm-8 text-center">
+						<div id="fact-container" class="col-xs-12 col-md-6 col-sm-8 text-center">
 						<p class="lead vpsize" id="fact"></p>
 					</div>
 					<div class="col-md-3 col-sm-2 hidden-xs"></div>
@@ -58,24 +58,32 @@
 
 				<!-- All We know-->
 				<div class="row">
-					<div class="col-md-4 col-sm-2 hidden-xs"></div>
-					<div class="col-xs-12 col-md-4 col-sm-8 text-center">
+					<div class="col-md-3 col-sm-2 hidden-xs"></div>
+					<div id="allweknow" class="col-xs-12 col-md-6 col-sm-8 text-center">
 						<p class="lead vpsize"><em>All we know is, he's called The Stig</em></p>
 					</div>
-					<div class="col-md-4 col-sm-2 hidden-xs"></div>
+					<div class="col-md-3 col-sm-2 hidden-xs"></div>
 				</div>
 
-				<div class="row">
-					<div class="col-md-4 col-sm-2 hidden-xs"></div>
-					<div id="mybutton" class="col-xs-12 col-md-4 col-sm-8 text-center">
-						<button onclick="shuffle();" type="button" class="btn btn-default">
+				<div id="mybutton" class="row bottom-buffer">
+					<div class="col-md-3 col-sm-2 hidden-xs"></div>
+					<div class="col-xs-6 col-md-3 col-sm-4 text-right">
+						<a href="javascript:shuffle();">
+						<div id="newfact" class="abutton"><span class="glyphicon glyphicon-cog"></span> New Fact</div>
+						</a>
+						<!--<button onclick="shuffle();" type="button" class="btn btn-default btn-sm">
 							<span class="glyphicon glyphicon-cog"></span> New Fact
-						</button>
-						<a class="btn btn-default" role="button" href="https://docs.google.com/forms/d/1lFNm9VQ1dP3RpMu7vSY8UgZ6nhnZd6kNnlIhxw9yJ7I/viewform" target="_blank">
+						</button>-->
+						<!--<a class="btn btn-default btn-sm" role="button" href="https://docs.google.com/forms/d/1lFNm9VQ1dP3RpMu7vSY8UgZ6nhnZd6kNnlIhxw9yJ7I/viewform" target="_blank">
 							<span class="glyphicon glyphicon-plus"></span> Add Fact
+						</a>-->
+					</div>
+					<div class="col-xs-6 col-md-3 col-sm-4 text-left">
+						<a href="https://docs.google.com/forms/d/1lFNm9VQ1dP3RpMu7vSY8UgZ6nhnZd6kNnlIhxw9yJ7I/viewform" target="_blank">
+						<div class="abutton"><span class="glyphicon glyphicon-plus"></span> Add Fact</div>
 						</a>
 					</div>
-					<div class="col-md-4 col-sm-2 hidden-xs"></div>
+					<div class="col-md-3 col-sm-2 hidden-xs"></div>
 				</div>
 
 			</div>

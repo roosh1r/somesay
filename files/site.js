@@ -16,7 +16,7 @@ function shuffle()
 {
     var i = Math.floor( Math.random() * len );
     var entry = data.feed.entry[i];
-    $('#fact').html(entry.gsx$facts.$t)
+    $('#fact').html(entry.gsx$facts.$t);
     setColour();
 }
 
@@ -25,7 +25,13 @@ function setColour()
     var r = Math.floor( Math.random()*51.2)*5;
     var g = Math.floor( Math.random()*51.2)*5;
     var b = Math.floor( Math.random()*51.2)*5;
+
     $('#bgcolor').css('background-color', 'rgb('+r+', '+g+', '+b+')');
+//    $('#newfact').hover(function(){
+//        $('#newfact').css('color','rgb('+r+', '+g+', '+b+')');
+//        },function(){
+//        $('#newfact').css('color','#fff');
+//    });
 }
 
 
