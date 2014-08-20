@@ -22,22 +22,20 @@
   h1.vpsize {
     font-size: 5.5vh !important;
     font-size: 4vmin;
-    letter-spacing: 0.4vmin;
   }
   p.vpsize {
-    font-size: 3.2vh !important;
+    font-size: 3.5vh !important;
     font-size: 1.5vmin;
-    letter-spacing: 0.15vmin;
   }
 
   @media (max-width: 767px) {
     h1.vpsize {
       font: "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 4.5vh !important;
+      font-size: 4.8vh !important;
       font-size: 4vmin;
     }
     p.vpsize {
-      font-size: 2.2vh !important;
+      font-size: 2.8vh !important;
       font-size: 1.5vmin;
     }
     .abutton {
