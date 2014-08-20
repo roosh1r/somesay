@@ -1,6 +1,6 @@
 
-var DATA_SPREADSHEET_ID = '1zJ_w0DrF6K2-VUw_8ijPo2OC_T0_m8alhEsM9m6Gp1s';
-var DATA_DOCUMENT_FEED = 'https://spreadsheets.google.com/feeds/list/'+DATA_SPREADSHEET_ID+'/od6/public/values?alt=json';
+var DATA_SPREADSHEET_ID = '1otkK6SidFVfwrOiU4L0l6fRu2bZKIaGJVrIRIqjDJJc';
+var DATA_DOCUMENT_FEED = 'https://spreadsheets.google.com/feeds/list/'+DATA_SPREADSHEET_ID+'/default/public/values?alt=json';
 
 function init()
 {
@@ -16,7 +16,7 @@ function shuffle()
 {
     var i = Math.floor( Math.random() * len );
     var entry = data.feed.entry[i];
-    $('#fact').html(entry.gsx$facts.$t);
+    $('#fact').html(entry.gsx$fact.$t);
     setColour();
 }
 
@@ -27,11 +27,6 @@ function setColour()
     var b = Math.floor( Math.random()*51.2)*5;
 
     $('#bgcolor').css('background-color', 'rgb('+r+', '+g+', '+b+')');
-//    $('#newfact').hover(function(){
-//        $('#newfact').css('color','rgb('+r+', '+g+', '+b+')');
-//        },function(){
-//        $('#newfact').css('color','#fff');
-//    });
 }
 
 
