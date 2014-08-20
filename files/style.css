@@ -35,12 +35,10 @@
       font: "Helvetica Neue", Helvetica, sans-serif;
       font-size: 4.5vh !important;
       font-size: 4vmin;
-      letter-spacing: 0.4vmin;
     }
     p.vpsize {
       font-size: 2.2vh !important;
       font-size: 1.5vmin;
-      letter-spacing: 0.15vmin;
     }
     .abutton {
       font-size: 1.8vmax !important;
