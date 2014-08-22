@@ -1,11 +1,11 @@
 /* CUSTOM CSS */
   div.page {
-    height: 100vh;
+    min-height: 100vh;
     color: #fff;
   }
 
   #helmet {
-    max-height: 45vh;
+    max-height: 40vh;
   }
   #fact-container {
     max-height: 25vh;
@@ -13,33 +13,42 @@
     overflow: hidden;
   }
 
-  img.vpsize { 
-    height: 45vh !important;
-    height: 45vmin;
+  hr {
+     border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 
+    background-image:      -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 
   }
-  .top-buffer { margin-top: 25px; margin-top: 5vh; }
+
+  img.vpsize { 
+    height: 40vh
+  }
+  .top-buffer { margin-top: 15px; margin-top: 2.5vh; margin-bottom: -15px; margin-bottom: -0.5vh; }
   .bottom-buffer { margin-bottom: 25px; margin-bottom: 5vh; }
   h1.vpsize {
-    font-size: 5.5vh !important;
-    font-size: 4vmin;
+    font-size: 5.5vh;
   }
   p.vpsize {
-    font-size: 3.5vh !important;
-    font-size: 1.5vmin;
+    font-size: 3.5vh;
+  }
+
+  span#seperator {
+    display: inline-block;
+    position: absolute;
   }
 
   @media (max-width: 767px) {
     h1.vpsize {
       font: "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 4.8vh !important;
-      font-size: 4vmin;
+      font-size: 4.8vh;
     }
     p.vpsize {
-      font-size: 2.8vh !important;
-      font-size: 1.5vmin;
+      font-size: 2.8vh;
     }
     .abutton {
-      font-size: 1.8vmax !important;
+      font-size: 1.8vmax;
     }
   }
 

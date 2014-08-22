@@ -16,6 +16,11 @@ function shuffle()
 {
     var i = Math.floor( Math.random() * len );
     var entry = data.feed.entry[i];
+    if (entry.gsx$season.$t && entry.gsx$episode.$t) {
+        $('#season').html("Season " + entry.gsx$season.$t);
+        $('#episode').html("Episode " + entry.gsx$episode.$t);
+        $('#seperator').html('|');
+    }
     $('#fact').html(entry.gsx$fact.$t);
     setColour();
 }
